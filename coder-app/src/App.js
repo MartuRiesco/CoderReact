@@ -5,20 +5,28 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edite todo esto<code>src/App.js</code> y guarde para recargar.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <title>
+          FUTBOL FUTBOL FUTBOL
+        </title>
+    <h1>  FUTBOL FUTBOL FUTBOL</h1>
       </header>
+      <body>
+      <div className='grilla'>
+      <div className="card" style="width: 18rem;">
+  <img src="..." className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+      
+
+      </div>
+      </body>
     </div>
+   
   );
 }
 
