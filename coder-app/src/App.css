@@ -15,7 +15,7 @@
 }
 
 main{
-  background-image: url(./img/campo.jpg);
+  background-color: rgb(2, 141, 16);
   height:max-content;
 }
 .App-header {

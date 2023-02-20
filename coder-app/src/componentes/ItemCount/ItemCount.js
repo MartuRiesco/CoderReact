@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './style.css'
-import onAdd from '../ItemListContainer/ItemListContainer';
+
 const ItemCount = ({initial, stock, onAdd}) => {
     const [count, setCount] = useState(0);
     
@@ -16,14 +16,14 @@ const ItemCount = ({initial, stock, onAdd}) => {
           setCount(count + 1);}
 
 };   return( <div>
-<button key={count} onClick={decrease}>
+<button className='bot' key={count} onClick={decrease}>
    -
 </button>
-<span>{count}</span>
-<button key={count >= 1} onClick={increase}>
+<span className='contador'> {count} </span>
+<button  className='bot'key={count >= 1} onClick={increase}>
    +
 </button>
-<button onClick={()=> onAdd(count) }>Agregar al carrito</button>
+<button  className='bot'onClick={()=> onAdd(count) }>Agregar al carrito</button>
 </div>)
 }
 export default ItemCount

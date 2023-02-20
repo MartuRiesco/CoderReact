@@ -4,9 +4,14 @@ import Menu from './componentes/NavBar/NavBar';
 import CartWidget from './componentes/CartWidget/CartWidget';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import ItemCount from './componentes/ItemCount/ItemCount';
-import onAdd from './componentes/ItemListContainer/ItemListContainer'
+import Cards from './componentes/Cards/Cards';
+
 
 function App() {
+  const onAdd = (cantidad) =>{
+    console.log(`compraste ${cantidad} de items`)
+  }
+  
   return (
     <div className="App">
        <body>
@@ -15,7 +20,9 @@ function App() {
         <CartWidget/>
       </header>
      <main>
-      <ItemListContainer greeting={'Bienvenidxs a FUTBOLFUTBOLFUTBOL '} />
+      <ItemListContainer greeting={'Bienvenidxs a TRES ESTRELLAS ⭐⭐⭐ '} />
+      
+      <Cards></Cards>
       <ItemCount initial={1} stock={5} onAdd={onAdd}/>
       </main>
       <footer></footer>
