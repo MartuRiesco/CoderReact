@@ -21,8 +21,8 @@ function App() {
       </header>
      <main>
       <ItemListContainer greeting={'Bienvenidxs a TRES ESTRELLAS ⭐⭐⭐ '} />
+    
       
-      <Cards></Cards>
       <ItemCount initial={1} stock={5} onAdd={onAdd}/>
       </main>
       <footer></footer>

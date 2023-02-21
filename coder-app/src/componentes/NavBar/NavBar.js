@@ -4,11 +4,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './style.css';
 
+
 function Menu () {
   return (
     <Navbar  expand="lg">
       <Container className='nav'>
-        <Navbar.Brand href="#home">TRES ESTRELLAS ⭐⭐⭐</Navbar.Brand>
+        <Navbar.Brand href="#"><img  className='imagen' src={process.env.PUBLIC_URL + '/img/logo.png'}/> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto  nav">
