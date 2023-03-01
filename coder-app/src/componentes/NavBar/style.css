@@ -1,9 +1,19 @@
+@font-face {
+    font-family: "ombudsman";
+    src: url(../../fonts/OmbudsmanStencil.otf);
+}
+ 
 .nav{
-    background: linear-gradient(#3991fd, #fbfdfa, #3991fd);
+    font-family: "ombudsman";
+    font-size:x-large;
     
 }
-.imagen
-{ background: linear-gradient(#3991fd, #fbfdfa, #3991fd);
-    width: 80px;
-
+.navbar{
+    margin-left:10px;
+    justify-content: center;
+   align-items: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+   
 }

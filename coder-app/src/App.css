@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Robotoli';
+  src: url(./fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'ombudsman';
+  src: url(./fonts/OmbudsmanStencil.otf);
+}
+
 .App {
   text-align: center;
   height: max-content;
@@ -13,21 +22,83 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body{
+  background: url(../public/img/campo.jpg);
+  background-attachment: fixed;
+}
 main{
-  background-color: rgb(2, 141, 16);
+
   height:max-content;
 }
-.App-header {
-  background-color:rgb(2, 141, 16);
+.swiper{background-color: black;
+  color: white;
+  font-family: 'Robotoli';
+  font-size: x-large;
+ display: flex;
 
-  display: flex;
+}
+
+.App-header {
+background-color: white;  
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   
 }
+#myDIV {
+  height:250px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+ 
+  gap: 10px;}
+  #myDIV div {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .item1 {
+    grid-row-end: span 2 }
+.item22{
+  font-family: 'ombudsman';
+      font-size: 100px;
+
+      position: absolute;
+}
+  .item2{
+    
+      align-content: baseline;
+      display: flex;
+    flex-wrap: wrap;
+  
+
+  
+    }
+    .item4{justify-content: center;
+     
+    }
+.imagen{
+  margin:30px;
+  width: auto;
+  height: 200px;
+}
+footer{
+  background-color: darkslategrey;
+  font-family: 'roboto';
+  font-size: small;
+ 
+}
+.pago{
+  width: 50px;
+  height: auto;
+}
+
+.pagos{
+  display:inline-block;
+  flex-direction: row;
+ 
+}
+
 
 .App-link {
   color: #61dafb;
@@ -43,4 +114,9 @@ main{
 }
 .grilla {
   display: grid;
-  grid-template-areas: "header header header" "fotos fotos fotos" "footer footer footer"; }
+  /* grid-template-areas: "header header header" "fotos fotos fotos" "footer footer footer"; */} 
+.grid{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
