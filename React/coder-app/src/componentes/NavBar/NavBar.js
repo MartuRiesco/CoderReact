@@ -16,16 +16,16 @@ function Menu () {
           <Nav className="me-auto  nav">
             <Nav.Link> <Link className='navb' to='/'>Home</Link></Nav.Link>            
             <NavDropdown title="Calzado" id="basic-nav-dropdown">
-              <NavDropdown.Item  ><Link className='navb' to='/Botines'>Botines</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link className='navb' to='/Ojotas'> Ojotas</Link></NavDropdown.Item>
-              <NavDropdown.Item ><Link className='navb' to='/Zapatillas'>Zapatillas</Link></NavDropdown.Item>
-              <NavDropdown.Item ><Link  className='navb'to='/Medias'>Medias</Link></NavDropdown.Item>
+              <NavDropdown.Item  ><Link className='navb' to='categoria/Botines'>Botines</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link className='navb' to='categoria/Ojotas'> Ojotas</Link></NavDropdown.Item>
+              <NavDropdown.Item ><Link className='navb' to='categoria/Zapatillas'>Zapatillas</Link></NavDropdown.Item>
+              <NavDropdown.Item ><Link  className='navb'to='categoria/Medias'>Medias</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Ropa" id="basic-nav-dropdown">
-            <NavDropdown.Item ><Link  className='navb' to='/Remeras'>Remeras</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link  className='navb' to='/Camisetas'>Camisetas</Link></NavDropdown.Item>
-              <NavDropdown.Item ><Link className='navb' to='/BuzosyCamperas'> Buzos y Camperas</Link> </NavDropdown.Item>
-              <NavDropdown.Item ><Link className='navb' to='/ShortsyPantalones'> Shorts y pantalones</Link> </NavDropdown.Item>
+            <NavDropdown.Item ><Link  className='navb' to='categoria/Remeras'>Remeras</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link  className='navb' to='categoria/Camisetas'>Camisetas</Link></NavDropdown.Item>
+              <NavDropdown.Item ><Link className='navb' to='categoria/BuzosyCamperas'> Buzos y Camperas</Link> </NavDropdown.Item>
+              <NavDropdown.Item ><Link className='navb' to='categoria/ShortsyPantalones'> Shorts y pantalones</Link> </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link ><Link className='navb' to='/Accesorios'>Accesorios</Link></Nav.Link>
             <Nav.Link ><Link  className='navb' to='/Contacto'>Contacto</Link></Nav.Link>

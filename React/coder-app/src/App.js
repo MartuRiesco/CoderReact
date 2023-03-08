@@ -2,7 +2,6 @@ import './App.css';
 import './componentes/NavBar/NavBar'
 import Menu from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import ItemCount from './componentes/ItemCount/ItemCount';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import CartWidget from './componentes/CartWidget/CartWidget';
 import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
@@ -41,9 +40,10 @@ function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer greeting={'Bienvenidxs a TRES ESTRELLAS ⭐⭐⭐ '} />}></Route>
         <Route path='/detalle/:idItem'element={<ItemDetailContainer/>}></Route>
+        <Route path='/categoria/:idCategoria' element={<ItemListContainer greeting={'Bienvenidxs a TRES ESTRELLAS ⭐⭐⭐ '}/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
-      <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+
       </main>
       <footer>
         <section  className='pagos'>

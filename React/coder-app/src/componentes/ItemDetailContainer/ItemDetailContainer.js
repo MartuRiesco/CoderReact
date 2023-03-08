@@ -9,7 +9,6 @@ function ItemDetailContainer(){
     const idItem= params.idItem
     const getData = new Promise ((response, reject) => {
         setTimeout(() => {
-            console.log('detalles', detalles);
             let encontrado = detalles.find((item)=> item.id === parseInt(idItem))
             response(encontrado)
         },3000)
@@ -20,7 +19,7 @@ function ItemDetailContainer(){
             .then((response)=>setProductos(response))
             
         },[])
-     
+     console.log('productos', Productos);
     return(<><section>
     <ItemDetail   Prod={Productos}/>
     </section>
