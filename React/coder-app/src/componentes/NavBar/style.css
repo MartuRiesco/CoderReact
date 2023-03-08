@@ -7,15 +7,14 @@
     font-family: "ombudsman";
     font-size:x-large;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
     
 }
 .navbar{
     margin-left:10px;
     justify-content: center;
    align-items: center;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
    
 }
 .navb{
