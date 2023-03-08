@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import {Link} from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
 import {
   Collapse,
   Navbar,
@@ -55,12 +56,12 @@ function Menu(args) {
             </UncontrolledDropdown>
             <NavItem>
               <NavLink >
-                Accesorios
+              <Link className='navb' to='categoria/Accesorios'>Accesorios</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink >
-               Contacto
+              <Link  className='navb' to='categoria/Contacto'>Contacto</Link>
               </NavLink>
             </NavItem>
           </Nav>

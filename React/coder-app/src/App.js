@@ -19,7 +19,7 @@ function App() {
   return (
     <BrowserRouter>   <div className="App">
         
-       <body>
+      
      
         <div className='grilla'>
       <header className="App-header">
@@ -27,7 +27,7 @@ function App() {
    <div className="item1"><Link to='/'><img  className='imagen' src={process.env.PUBLIC_URL + '/img/tresestrellas.png'}/></Link></div>
   <div className="item2"><h1 className='item22'>TRES ESTRELLAS</h1></div>
   <div className="item3"><CartWidget/></div> 
-  <div className="item4"><Menu className="menu" /></div>  
+  <div className="item4"><Menu className="menu navbar-expand-sm" /></div>  
 </div>
 
       <div className='swiper'>
@@ -56,7 +56,6 @@ function App() {
 
       </footer>
       </div>
-      </body>
     </div>
     </BrowserRouter>
  
